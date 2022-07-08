@@ -13,11 +13,16 @@ public class Threads_1 {
 
         // Runnable como lambda
         Thread t2 = new Thread(
-                () -> System.out.println("ola nova thread...."));
+                () -> System.out.println(Thread.currentThread().getName()));
         t2.start();
 
         // nao se pode iniciar a mesma thread mais de uma vez
         //t2.start();
+
+        // Varias Threads
+        Thread t3 = new Thread(new MeuRunnable());
+        t3.start();
+
 
 
     }
