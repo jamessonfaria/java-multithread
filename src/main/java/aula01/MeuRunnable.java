@@ -1,3 +1,5 @@
+package aula01;
+
 public class MeuRunnable implements Runnable {
     @Override
     public void run() {

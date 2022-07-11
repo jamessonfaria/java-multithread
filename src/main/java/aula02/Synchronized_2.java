@@ -1,3 +1,5 @@
+package aula02;
+
 public class Synchronized_2 {
     /*
     * USANDO NA VIDA REAL

@@ -1,3 +1,5 @@
+package aula01;
+
 public class Threads_1 {
 
     public static void main(String[] args) {

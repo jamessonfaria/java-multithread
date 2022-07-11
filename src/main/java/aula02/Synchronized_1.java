@@ -1,3 +1,5 @@
+package aula02;
+
 public class Synchronized_1 {
     /*
     * DESVANTAGENS DO SYNCHRONIZED
