@@ -15,7 +15,6 @@ public class ProdutorConsumidor_3 {
     public static void main(String[] args) {
 
         Runnable produtor = () -> {
-
             simulaProcessamento();
             System.out.println("Produzindo");
             int numero = new Random().nextInt(10000);
