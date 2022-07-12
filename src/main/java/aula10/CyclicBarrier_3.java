@@ -17,12 +17,12 @@ public class CyclicBarrier_3 {
     private static Runnable r1;
     private static Runnable r2;
     private static Runnable r3;
+    private static double resultadoFinal = 0;
 
     // (432*3) + (3^14) + (45*127/12) = ?
     public static void main(String[] args) throws InterruptedException {
         Runnable sumarizacao = () -> {
             System.out.println("*** Somando tudo ***");
-            double resultadoFinal = 0;
             resultadoFinal += resultados.poll();
             resultadoFinal += resultados.poll();
             resultadoFinal += resultados.poll();
