@@ -13,7 +13,7 @@ public class ProdutorConsumidor_2 {
     * Produtor x Consumidor
     * => "regiao critica / sessao critica": concorrencia esta acontecendo, é a sessao critica do programa
     * => "mutex / exclusao mutua": quando um recurso estiver acessando a informacao nao sera permitido
-    * que outras threads acessem
+    * que outras threads acessem, exemplo usando o lock
     * */
 
     private static final BlockingQueue<Integer> FILA = new LinkedBlockingQueue<>(5);
