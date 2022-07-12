@@ -20,7 +20,7 @@ public class CyclicBarrier_3 {
 
     // (432*3) + (3^14) + (45*127/12) = ?
     public static void main(String[] args) throws InterruptedException {
-        Runnable finalizacao = () -> {
+        Runnable sumarizacao = () -> {
             System.out.println("*** Somando tudo ***");
             double resultadoFinal = 0;
             resultadoFinal += resultados.poll();
@@ -39,7 +39,7 @@ public class CyclicBarrier_3 {
         // nesse caso serao 3, usando o await na tarefa ele vai aguardar ate que as 3 threads finalizem,
         // o segundo parametro é a tarefa a ser executado depois que as 3 threads finalizarem, nesse
         // caso o resultado final
-        CyclicBarrier cyclicBarrier = new CyclicBarrier(3, finalizacao);
+        CyclicBarrier cyclicBarrier = new CyclicBarrier(3, sumarizacao);
         executor = Executors.newFixedThreadPool(3);
 
         r1 = () -> {
